@@ -1,0 +1,62 @@
+
+============================================================
+MACHINE LEARNING MODELS SUMMARY - SEMESTER V
+============================================================
+
+DATASET STATISTICS:
+------------------
+Total Students: 49
+Students with SGPA: 49
+At-Risk Students: 2
+Not At-Risk: 47
+
+MODEL 1: SGPA PREDICTION (REGRESSION)
+-------------------------------------
+Best Model: Linear Regression
+R² Score: 0.9863
+RMSE: 0.0809
+MAE: 0.0728
+
+Model Performance:
+- Explains 98.63% of variance in SGPA
+- Average prediction error: ±0.07 points
+
+Features Used:
+- Average Grade Points
+- Minimum Grade Points
+- Maximum Grade Points  
+- Standard Deviation of Grades
+- Fail Count
+
+MODEL 2: AT-RISK STUDENT CLASSIFICATION
+----------------------------------------
+Best Classifier: Logistic Regression
+Accuracy: 1.0000 (100.00%)
+
+Classification Performance:
+- Correctly identifies at-risk students with 100.00% accuracy
+- Useful for early intervention programs
+
+KEY INSIGHTS:
+-----------
+1. Student performance is highly predictable from grades
+2. Grade consistency matters - standard deviation is a key factor
+3. Any failed subject significantly impacts SGPA
+4. Early identification of at-risk students is possible
+
+RECOMMENDATIONS:
+---------------
+1. Use SGPA prediction model for performance forecasting
+2. Use at-risk classifier for identifying students needing intervention
+3. Focus on improving weakest subjects (high fail rate)
+4. Encourage consistent performance across all subjects
+5. Implement early warning system for at-risk students
+
+MODELS SAVED:
+-----------
+- ML Models: ml_models/sgpa_predictor.pkl
+- Classifier: ml_models/at_risk_classifier.pkl
+- Scaler: ml_models/scaler.pkl
+- Visualizations: python/outputs/06_*.png through 08_*.png
+
+============================================================
