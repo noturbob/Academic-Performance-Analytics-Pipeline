@@ -1,0 +1,115 @@
+
+================================================================================
+COMPREHENSIVE STATISTICAL ANALYSIS REPORT
+ACADEMIC PERFORMANCE - SEMESTER V
+================================================================================
+
+SAMPLE CHARACTERISTICS
+--------------------------------------------------------------------------------
+Total Students:              55
+Students with SGPA:          49 (89.1%)
+Promoted Students:           6
+Total Subjects:              15
+Total Grades Analyzed:       330
+
+DESCRIPTIVE STATISTICS - SGPA
+--------------------------------------------------------------------------------
+Mean (Average):              8.3414
+Median (Middle Value):       8.4200
+Mode (Most Frequent):        7.1500
+Standard Deviation:          0.8179
+Variance:                    0.6690
+Minimum:                     6.2700
+Maximum:                     9.8100
+Range:                       3.5400
+
+QUARTILE ANALYSIS
+--------------------------------------------------------------------------------
+Q1 (25th Percentile):        7.8100
+Q2 (50th Percentile):        8.4200
+Q3 (75th Percentile):        9.0000
+Interquartile Range (IQR):   1.1900
+
+DISTRIBUTION SHAPE
+--------------------------------------------------------------------------------
+Skewness:                    -0.4485
+  Interpretation:            Negatively skewed (left tail)
+Kurtosis:                    2.5990
+  Interpretation:            Platykurtic (light tails)
+
+NORMALITY TESTING
+--------------------------------------------------------------------------------
+Shapiro-Wilk Test:
+  Test Statistic:            0.974000
+  P-value:                   0.346584
+  Result:                    Data is NORMALLY distributed (α=0.05)
+
+Kolmogorov-Smirnov Test:
+  Test Statistic:            0.079624
+  P-value:                   0.915226
+
+Interpretation:
+  → SGPA follows a normal distribution
+  → Parametric tests (t-test, ANOVA) are appropriate
+
+HYPOTHESIS TESTING
+--------------------------------------------------------------------------------
+One-Sample T-Test: H0: μ = 8.0 (Benchmark SGPA)
+  T-statistic:               2.921940
+  P-value:                   0.005290
+  Degrees of Freedom:        48
+  95% Confidence Interval:   [8.1065, 8.5764]
+
+  Conclusion:
+  → The mean SGPA (8.34) is SIGNIFICANTLY different from 8.0
+  → We reject the null hypothesis
+
+Chi-Square Test: Performance Category Distribution
+  Chi-Square Statistic:      19.454545
+  P-value:                   0.000640
+
+  Conclusion:
+  → Performance categories are NOT uniformly distributed
+  → Students are concentrated in specific categories
+
+CORRELATION ANALYSIS
+--------------------------------------------------------------------------------
+Pearson Correlation Results (with significance testing):
+
+1. SGPA vs Average Grade Points
+   Correlation (r):           0.993987
+   P-value:                   0.000000 **
+   R-squared (R²):            0.988010
+
+   Interpretation:
+   → VERY STRONG positive correlation
+   → 98.8% of SGPA variance explained by grade quality
+   → Better grades → Higher SGPA
+
+EFFECT SIZE
+--------------------------------------------------------------------------------
+Cohen's d (SGPA vs 8.0 benchmark):
+  Effect Size: 0.4174
+  Interpretation: small effect
+
+KEY FINDINGS
+--------------------------------------------------------------------------------
+1. SGPA scores follow a normal distribution.
+2. Average SGPA of 8.34 significantly exceeds the 8.0 benchmark.
+3. Performance is highly predictable from grade points.
+4. Grade consistency is important for SGPA.
+5. Some subjects have high fail rates requiring intervention.
+
+RECOMMENDATIONS
+--------------------------------------------------------------------------------
+1. Use SGPA predictions for performance forecasting.
+2. Implement early intervention for at-risk students.
+3. Provide additional support for high-fail-rate subjects.
+4. Focus on grade consistency across all subjects.
+5. Use this analysis for curriculum improvements.
+
+================================================================================
+Analysis Date: 2025-12-15
+Software: R Statistical Computing
+================================================================================
+
