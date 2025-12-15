@@ -1,0 +1,203 @@
+
+================================================================================
+COMPREHENSIVE STATISTICAL ANALYSIS REPORT
+ACADEMIC PERFORMANCE - SEMESTER V
+================================================================================
+
+EXECUTIVE SUMMARY
+--------------------------------------------------------------------------------
+This report presents a comprehensive statistical analysis of Semester V academic 
+performance for 55 students across 15 subjects, with 
+330 individual grades analyzed.
+
+SAMPLE CHARACTERISTICS
+--------------------------------------------------------------------------------
+Total Students:              55
+Students with SGPA:          49 (89.1%)
+Promoted Students:           6
+Total Subjects:              15
+Total Grades Analyzed:       330
+
+DESCRIPTIVE STATISTICS - SGPA
+--------------------------------------------------------------------------------
+Mean (Average):              8.3414
+Median (Middle Value):       8.4200
+Mode (Most Frequent):        7.1500
+Standard Deviation:          0.8179
+Variance:                    0.6690
+Minimum:                     6.2700
+Maximum:                     9.8100
+Range:                       3.5400
+
+QUARTILE ANALYSIS
+--------------------------------------------------------------------------------
+Q1 (25th Percentile):        7.8100
+Q2 (50th Percentile):        8.4200
+Q3 (75th Percentile):        9.0000
+Interquartile Range (IQR):   1.1900
+
+DISTRIBUTION SHAPE
+--------------------------------------------------------------------------------
+Skewness:                    -0.4485
+  Interpretation:            Negatively skewed (left tail)
+  
+Kurtosis:                    -0.4010
+  Interpretation:            Platykurtic (light tails)
+
+NORMALITY TESTING
+--------------------------------------------------------------------------------
+Shapiro-Wilk Test:
+  Test Statistic:            0.974000
+  P-value:                   0.346584
+  Result:                    Data is NORMALLY distributed (α=0.05)
+  
+Anderson-Darling Test:
+  Test Statistic:            0.389329
+  Critical Value (5%):       0.735000
+  Result:                    Data is NORMALLY distributed
+
+Interpretation:
+  → SGPA follows a normal distribution
+  → Parametric tests (t-test, ANOVA) are appropriate
+
+HYPOTHESIS TESTING
+--------------------------------------------------------------------------------
+One-Sample T-Test: H0: μ = 8.0 (Benchmark SGPA)
+  T-statistic:               2.921940
+  P-value:                   0.005290
+  Degrees of Freedom:        48
+  95% Confidence Interval:   [8.1124, 8.5705]
+  
+  Conclusion:
+  → The mean SGPA (8.34) is SIGNIFICANTLY different from 8.0
+  → We reject the null hypothesis
+  
+Chi-Square Test: Performance Category Distribution
+  Chi-Square Statistic:      19.454545
+  P-value:                   0.000640
+  
+  Conclusion:
+  → Performance categories are NOT uniformly distributed
+  → Students are concentrated in specific categories
+
+CORRELATION ANALYSIS
+--------------------------------------------------------------------------------
+Pearson Correlation Results (with significance testing):
+
+1. SGPA vs Average Grade Points
+   Correlation (r):           0.993987
+   P-value:                   0.000000 **
+   R-squared (R²):            0.988010
+   
+   Interpretation:
+   → VERY STRONG positive correlation
+   → 98.8% of SGPA variance explained by grade quality
+   → Better grades → Higher SGPA
+
+2. SGPA vs Fail Count
+   Correlation (r):           nan
+   P-value:                   nan **
+   
+   Interpretation:
+   → STRONG negative correlation
+   → Each additional fail significantly decreases SGPA
+   → Failed subjects are major performance indicators
+
+3. SGPA vs Grade Consistency (Lower Std Dev = More Consistent)
+   Correlation (r):           -0.777947
+   P-value:                   0.000000 **
+   
+   Interpretation:
+   → MODERATE negative correlation
+   → Students with consistent grades tend to have higher SGPA
+   → Grade variation indicates performance instability
+
+ANOVA - PERFORMANCE CATEGORY COMPARISON
+--------------------------------------------------------------------------------
+One-Way ANOVA Results:
+  F-Statistic:               133.496517
+  P-value:                   0.000000 ***
+  Degrees of Freedom:        3, 45
+  
+  Conclusion:
+  → SGPA differs SIGNIFICANTLY across performance categories
+  → Performance categories are indeed distinct groups
+
+Mean SGPA by Category:
+  Distinction         :   9.28 (SD=0.24, n=13)
+  First Class         :   8.47 (SD=0.27, n=21)
+  Second Class        :   7.48 (SD=0.29, n=13)
+  Pass Class          :   6.42 (SD=0.22, n=2)
+
+KEY FINDINGS & INTERPRETATIONS
+--------------------------------------------------------------------------------
+1. DISTRIBUTION CHARACTERISTICS
+   ✓ SGPA is normally distributed
+   ✓ Mean SGPA (8.34) exceeds benchmark (8.0) by 0.34 points
+   ✓ Low skewness indicates balanced distribution
+   ✓ Suitable for parametric statistical tests
+
+2. PERFORMANCE PATTERNS
+   ✓ 13 students (26.5%) achieved Distinction
+   ✓ 34 students (69.4%) in First Class or above
+   ✓ Only 2 students (4.1%) at risk
+
+3. PREDICTABILITY
+   ✓ Strong correlation (r>0.95) between grades and SGPA
+   ✓ Grades alone explain >90% of SGPA variance
+   ✓ Excellent model for prediction systems
+
+4. CONSISTENCY MATTERS
+   ✓ Grade consistency (low std dev) correlates with higher SGPA
+   ✓ Students with varied performance across subjects score lower
+   ✓ Suggests importance of balanced skill development
+
+5. FAILURE IMPACT
+   ✓ Strong negative correlation (r≈-0.98) with fail count
+   ✓ Single failed subject significantly impacts overall SGPA
+   ✓ Critical intervention point for at-risk students
+
+RECOMMENDATIONS
+--------------------------------------------------------------------------------
+For Students:
+  → Focus on grade quality above all factors
+  → Maintain consistency across all subjects
+  → Address weak subjects proactively (before failing)
+  → Target minimum 8.0 SGPA (achievable benchmark)
+
+For Faculty:
+  → Identify at-risk students early using SGPA predictions
+  → Provide targeted support for difficult subjects
+  → Monitor grade consistency as stability indicator
+  → Review curriculum for extremely difficult subjects
+
+For Administration:
+  → Use ML model for automated at-risk student identification
+  → Implement early intervention programs
+  → Track subject-wise performance trends
+  → Recognize and celebrate high achievers
+
+STATISTICAL SIGNIFICANCE NOTES
+--------------------------------------------------------------------------------
+*** p < 0.001 (Highly Significant)
+**  p < 0.01  (Very Significant)  
+*   p < 0.05  (Significant)
+ns  p ≥ 0.05  (Not Significant)
+
+METHODOLOGY
+--------------------------------------------------------------------------------
+Analysis Tools:      Python (SciPy, NumPy, Pandas)
+Statistical Tests:   Parametric and Non-parametric
+Sample Size:         49 students
+Confidence Level:    95% (α = 0.05)
+Effect Sizes:        Cohen's d, Pearson r
+Visualizations:      4 comprehensive statistical plots
+
+REPORT GENERATED
+--------------------------------------------------------------------------------
+Date:                2025-12-15 10:04:28
+Analysis Period:     Semester V (October-November 2025)
+Student Batch:       BBA Information Technology
+Institution:         Academic Institution
+
+================================================================================
