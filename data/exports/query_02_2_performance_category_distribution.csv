@@ -1,0 +1,6 @@
+performance_category,student_count,percentage,avg_sgpa,min_sgpa,max_sgpa
+Distinction,13,23.64,9.28,9.0,9.81
+First Class,21,38.18,8.47,8.0,8.92
+Second Class,13,23.64,7.48,7.12,7.92
+Pass Class,2,3.64,6.42,6.27,6.58
+Promoted,6,10.91,,,
