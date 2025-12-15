@@ -1,0 +1,65 @@
+
+============================================================
+DATA CLEANING REPORT - SEMESTER V
+============================================================
+
+TABLES CREATED:
+--------------
+1. Students: 55 students
+2. Subjects: 15 subjects  
+3. Grades: 330 grade records
+4. Performance: 55 performance records
+5. Subject Performance: 15 subject statistics
+
+PERFORMANCE DISTRIBUTION:
+------------------------
+performance_category
+First Class     21
+Distinction     13
+Second Class    13
+Promoted         6
+Pass Class       2
+
+PASS/FAIL SUMMARY:
+-----------------
+result
+PASS        49
+PROMOTED     6
+
+SGPA STATISTICS:
+---------------
+Mean: 8.34
+Median: 8.42
+Std Dev: 0.82
+Min: 6.27
+Max: 9.81
+
+SUBJECT DIFFICULTY (by pass rate):
+----------------------------------
+ course_code                             course_title  pass_rate  fail_count
+IKS.SL.5.25T            INDIAN KNOWLEDGE SYSTEM (IKS)      25.00           3
+ IF-5-BM-22T                    INTERNATIONAL FINANCE      88.89           1
+ CS.5.CS.22T                           CYBER SECURITY      92.86           1
+HRD-5-BM-22T              HRD: SYSTEMS AND STRATEGIES      92.86           1
+AWS-5-CS-25T AWS FUNDAMENTALS AND CLOUD STORAGE (SEC)      98.18           1
+
+GRADE DISTRIBUTION:
+------------------
+grade
+A     123
+A+    114
+O      27
+B+     26
+B      16
+C       9
+F       9
+D       6
+
+DATA QUALITY:
+------------
+Missing SGPA values: 6
+Total grade records: 330
+Fail grades: 9
+Pass rate: 97.27%
+
+============================================================
